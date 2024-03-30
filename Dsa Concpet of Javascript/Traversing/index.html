@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <input type="text" id="data">
+    <button onclick="traversing()">Traversing</button>
+    <p id="kamal"></p>
+    <p id="error"></p>
+</body>
+<script>
+let a=[1,2,3,23,45, 45];
+
+
+function traversing(){
+    let el=document.getElementById("data").value;
+    let val=parseInt(el)
+    if(el<a.length &&  typeof(val)==="number" && el>=0){
+    document.getElementById("kamal").innerHTML=a[val]
+}else{
+document.getElementById("error").innerHTML="please type valid input"
+}
+}
+</script>
+</html>
